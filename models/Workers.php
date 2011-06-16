@@ -2,7 +2,7 @@
 
 namespace li3_delayed_job\models;
 
-use \lithium\analysis\Logger;
+use lithium\analysis\Logger;
 
 class Workers {
   const SLEEP = 5;
