@@ -10,11 +10,11 @@ class Workers {
   protected $quiet = false;
   
   public function __construct(array $config = array()) {
-    $config += array('quiet' => false, 'min_priority' => null, 'max_priority' => null);
+    $config += array('quiet' => false, 'minPriority' => null, 'maxPriority' => null);
     $this->quiet = $config['quiet'];
     
-    Jobs::$min_priority = $config['min_priority'];
-    Jobs::$max_priority = $config['max_priority'];
+    Jobs::$minPriority = $config['minPriority'];
+    Jobs::$maxPriority = $config['maxPriority'];
   }
   
   public function start() {
