@@ -34,7 +34,7 @@ class Workers {
         if($count == 0) {
           sleep(Workers::SLEEP);
         } else {
-          $this->say(sprintf($count.' jobs processed at %.4f j/s, %d failed ...', $count/$realtime, $result['failed']));
+          $this->say(sprintf($count.' jobs processed at %.4f j/s, %d failed ...', $count/$realtime, $result['failure']));
         }
       }
     } catch(Exception $e) {
